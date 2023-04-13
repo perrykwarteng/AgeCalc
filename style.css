@@ -23,6 +23,7 @@ html {
 
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background-color: var(--Light-grey);
 }
 
 .attribution {
@@ -34,7 +35,92 @@ body {
 }
 
 /* Mobile View */
+.flieds {
+  display: flex;
+  justify-content: center;
+}
+.flieds .area {
+  margin: 0rem 0.8rem;
+}
+.flieds label {
+  display: block;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: var(--Smokey-grey);
+}
+.flieds input {
+  width: 7rem;
+  height: 4.5rem;
+  padding: 1rem;
+  margin-top: 0.3rem;
+  border: 0.2px solid #716f6f;
+  border-radius: 5px;
+  color: var(--Off-black);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.flieds #vidDay,
+.flieds #vidMonth,
+.flieds #vidYear {
+  display: none;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--Light-red);
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.divider hr {
+  margin-top: 10rem;
+  width: 80%;
+  color: var(--Light-grey);
+}
+.divider img {
+  background-color: var(--Purple);
+  width: 5rem;
+  height: 5rem;
+  padding: 1.2rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 75px;
+  right: none;
+}
 
 /* Desktop and tablet view */
-@media screen {
+@media screen and (min-width: 680px) {
+  /* Flieds */
+  .flieds {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .flieds label {
+    font-size: 1.3rem;
+  }
+  .flieds input {
+    width: 12rem;
+    height: 5rem;
+    font-size: 2.5rem;
+  }
+
+  .flieds #vidDay,
+  .flieds #vidMonth,
+  .flieds #vidYear {
+    font-size: 1.2rem;
+  }
+
+  /* Divider */
+
+  .divider img {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    right: 0px;
+  }
 }
