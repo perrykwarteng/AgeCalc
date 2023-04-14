@@ -16,7 +16,45 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
+    <section class="container">
+      <div class="cal-container">
+        <!-- Flieds -->
+        <div class="flieds">
+          <div class="area day">
+            <label for="year">DAY</label>
+            <input type="text" id="day" />
+            <div id="vidDay">Must be a valid day</div>
+          </div>
+          <div class="area month">
+            <label for="month">MONTH</label>
+            <input type="text" id="month" />
+            <div id="vidMonth">Must be a valid month</div>
+          </div>
+          <div class="area year">
+            <label for="year">YEAR</label>
+            <input type="text" id="year" />
+            <div id="vidYear">Must be in the past</div>
+          </div>
+        </div>
+        <!-- Divider -->
+        <div class="divider">
+          <hr />
+          <img src="./assets/images/icon-arrow.svg" alt="arrow-image" />
+        </div>
+        <!-- AgeCalc -->
+        <div class="ageCalc">
+          <div class="years">
+            <h2><span id="yValue">--</span>years</h2>
+          </div>
+          <div class="months">
+            <h2><span id="mValue">--</span>months</h2>
+          </div>
+          <div class="days">
+            <h2><span id="dValue">--</span>days</h2>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Day
   DD

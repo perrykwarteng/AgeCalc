@@ -35,9 +35,25 @@ body {
 }
 
 /* Mobile View */
+
+/* container */
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .cal-container {
+  width: 90%;
+  padding: 2rem;
+  background: var(--Off-white);
+  border-radius: 1rem;
+  border-bottom-right-radius: 9rem;
+}
+
 .flieds {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .flieds .area {
   margin: 0rem 0.8rem;
@@ -51,13 +67,14 @@ body {
 .flieds input {
   width: 7rem;
   height: 4.5rem;
-  padding: 1rem;
+  padding: 0rem;
   margin-top: 0.3rem;
   border: 0.2px solid #716f6f;
   border-radius: 5px;
   color: var(--Off-black);
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  background: none;
 }
 
 .flieds #vidDay,
@@ -78,7 +95,7 @@ body {
 }
 .divider hr {
   margin-top: 10rem;
-  width: 80%;
+  width: 90%;
   color: var(--Light-grey);
 }
 .divider img {
