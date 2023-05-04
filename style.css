@@ -67,7 +67,7 @@ body {
 .flieds input {
   width: 7rem;
   height: 4.5rem;
-  padding: 0rem;
+  padding: 1rem;
   margin-top: 0.3rem;
   border: 0.2px solid #716f6f;
   border-radius: 5px;
@@ -81,6 +81,16 @@ body {
 .flieds #vidMonth,
 .flieds #vidYear {
   display: none;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--Light-red);
+}
+
+.flieds .vidDay,
+.flieds .vidMonth,
+.flieds .vidYear {
+  display: block;
   font-size: 1rem;
   font-style: italic;
   font-weight: 400;
@@ -110,6 +120,9 @@ body {
 }
 
 /* Age calc */
+.ageCalc {
+  margin: 4rem 0 0 1rem;
+}
 .ageCalc .years h2,
 .ageCalc .months h2,
 .ageCalc .days h2 {
@@ -124,6 +137,9 @@ body {
 
 /* Desktop and tablet view */
 @media screen and (min-width: 680px) {
+  .container .cal-container {
+    width: 50%;
+  }
   /* Flieds */
   .flieds {
     display: flex;
@@ -146,7 +162,6 @@ body {
   }
 
   /* Divider */
-
   .divider img {
     width: 8rem;
     height: 8rem;
@@ -154,9 +169,12 @@ body {
     right: 0px;
   }
   /* Age calc */
+  .ageCalc {
+    margin: 3rem 0 0 1rem;
+  }
   .ageCalc .years h2,
   .ageCalc .months h2,
   .ageCalc .days h2 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 }
